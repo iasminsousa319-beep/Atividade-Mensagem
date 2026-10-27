@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem do Dia</title>
+    <style>
+        body {
+            background-color: #fff0f3;
+            font-family: "Georgia", "Times New Roman", Times, serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(255, 143, 171, 0.2);
+            padding: 48px;
+            border: 2px solid #ffb3c6;
+        }
+        .card-title {
+            font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            font-size: 1.75rem;
+            color: #c9184a;
+            margin-bottom: 24px;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        hr {
+            margin: 24px 0;
+            border: 0;
+            border-top: 1px solid #ffccd5;
+        }
+        .frase {
+            font-size: 1.6rem;
+            font-weight: 500;
+            font-style: italic;
+            color: #590d22;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .autor {
+            font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            color: #a4133c;
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn {
+            display: inline-block;
+            font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            background-color: #ff4d6d;
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 12px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px -1px rgba(255, 77, 109, 0.3);
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="card-title">🌸 Mensagem do Dia</h1>
+            <hr>
+            <p class="frase">"<%= frase %>"</p>
+            <p class="autor">— Ron Swanson</p>
+            <a href="/" class="btn">Nova Mensagem</a>
+        </div>
+    </div>
+</body>
+</html>
